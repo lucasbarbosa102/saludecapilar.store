@@ -1,100 +1,129 @@
 @charset "UTF-8";
-body {
-	background: #000000 !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* CSS Document */
 
-/* Header */
+/* Reset */
+html, body {
+	font-family: 'Montserrat', sans-serif !important;
+}
+/* Reset */
+
+/* Heade */
 header.header {
-    background: red;
-    padding: 10px 0;
-	margin-bottom: 25px;
+    padding: 50px 0;
 }
 header.header h1 {
     text-align: center;
-    color: yellow;
-    font-size: 22px;
-	margin: 0;
+    font-size: 35px;
+    font-weight: 800;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.4;
 }
-/* Header */
+header.header h1 span {
+	color: red;
+}
+/* Heade */
 
 /* Conteúdo */
-img.ultrasecreto {
+main#main {
+	width: 75%;
+	margin: 0 auto;
+}
+img.crescimento {
     clear: both;
     display: block;
-    width: 40%;
-    margin: 25px auto 50px auto;
-}
-section.conteudo h2 {
-    text-align: center;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 900;
-	color: #ffffff;
+    width: 75%;
     margin: 0 auto 35px auto;
 }
-section.conteudo h2 i {
-    color: red;
-    padding: 2px 10px;
-}
-section.conteudo h3 {
+main#main p {
     text-align: center;
-    font-size: 14px;
-	color: #ffffff;	
-    margin: 25px auto 15px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto 35px auto;
 }
-section.conteudo h4 {
+img.garantia {
     clear: both;
     display: block;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-	color: #ffffff;	
-	margin: 15px auto 15px auto;
-}
-section.conteudo h4 svg {
-    margin-top: -8px;
-    fill: red;
-}
-.video-vsl {
-    background: #000000;
-    clear: both;
-    display: block;
-    border: solid 4px #000000;
-    margin: 0 auto;
-    width: 70%;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-}
-img.dr {
-    clear: both;
-    display: block;
-    width: 12%;
-    margin: 40px auto 35px auto;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-}
-section.conteudo h1 {
-	font-family: "Georgia", Sans-serif !important;
-	text-align: center;
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0 0 15px 0;
-	padding: 0 500px;
+    width: 25%;
+    margin: 0 auto 35px auto;
 }
 img.setas {
     clear: both;
     display: block;
-    width: 20%;
-    margin: 0 auto;
+    width: 25%;
+    margin: 0 auto 15px auto;
 }
-img.bt {
+a.cta {
     clear: both;
     display: block;
-    width: 45%;
+    text-align: center;
+    background: green;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+    width: 50%;
+    margin: 0 auto 35px auto;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+a.cta span {
+    clear: both;
+    display: block;
+    font-size: 18px;
+    color: yellow;
+    font-style: italic;
+}
+.blob {
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse-black 2s infinite;
+}
+.blob.green {
+	box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+	animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+	}
+}
+
+main#main h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    width: 70%;
     margin: 0 auto;
+    line-height: 1.4;
+}
+img.ad {
+    clear: both;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+main#main h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 auto 25px auto;
 }
 /* Conteúdo */
 
@@ -107,10 +136,10 @@ img.bt {
   border-radius: 3px;
   padding: 0 15px;
   padding-bottom: 15px;
-  width: 75%;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   position: relative;
   color: #4267b2;
+  width: 75%;
 }
 .fb-comments-header {
   padding: 15px 0;
@@ -148,7 +177,11 @@ tr {
   width: 48px;
   padding-right: 5px;
 }
-
+img.adfb {
+    clear: both;
+    display: block;
+    width: 50%;
+}
 .fb-comments-comment-img img {
   max-width: 48px;
   border-radius: 25px;
@@ -221,61 +254,59 @@ tr {
 }
 /* Comentários FB */
 
-
-/* Rodapé */
+/* Footer */
 footer.footer {
-	background: #000000;
-	padding: 35px 0;
-	margin: 50px auto 0 auto;
+	padding: 50px 0;
+	background: #fafafa;
+	text-align: center;
 }
 footer.footer p {
-	text-align: center;
-	color: #fafafa;
-	font-size: 10px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+    width: 50%;
+    margin: 25px auto 0 auto;
 }
-.termos {
-	clear: both;
-	display: block;
-	text-align: center;
-	font-size: 14px;
-	margin: 0 0 20px 0;
+
+footer.footer a {
+    font-size: 12px;
 }
-/* Rodapé */
+/* Footer */
 
 /* Responsivo */
 @media (max-width: 700px) {
-	img.ultrasecreto {
+	header.header h1 {
+		width: 100%;
+		font-size: 18px;
+	}
+	main#main {
+		width: 100%;
+	}
+	img.crescimento {
 		width: 80%;
-		margin: 5px auto 25px auto;
 	}	
-	header.header h1, section.conteudo h4 {
+	main#main p {
 		font-size: 16px;
 	}
-	section.conteudo h2 {
-		font-size: 21px;
-	}
-	section.conteudo h3 {
-		font-size: 12px;
-   		margin: 0 auto 10px auto;
-	}
-	.video-vsl {
-		width: 100%;
-		margin: 0 auto;
-	}
-	section.conteudo h1, section.conteudo p {
-		padding: 0 35px;
-		text-align: center;
-	}
 	img.setas {
-		width: 50%;
-		margin: 35px auto 0 auto;
+		width: 35%;
 	}
-	img.bt {
+	a.cta {
 		width: 100%;
 	}
-	.fb-comments {
-		width: 95%;
+	main#main h2 {
+		width: 100%;
+		font-size: 16px;
+		margin: 0 auto 25px auto;
 	}
-	
+	main#main h3 {
+		font-size: 16px;
+	}
+	img.garantia {
+		width: 50%;
+	}
+	.fb-comments, img.adfb, footer.footer p {
+		width: 100%;
+	}
 }
 /* Responsivo */
